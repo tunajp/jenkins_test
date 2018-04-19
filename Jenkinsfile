@@ -6,5 +6,10 @@ pipeline {
         echo 'test first step'
       }
     }
+    stage('second step') {
+      steps {
+        cleanWs()
+      }
+    }
   }
 }
